@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch & Clock</title>
+    <link rel="stylesheet" href="stw.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Master</h1>
+
+        <div class="mode-toggle">
+            <button id="clock-mode-btn" class="active">Clock</button>
+            <button id="stopwatch-mode-btn">Stopwatch</button>
+        </div>
+
+        <div class="clock-section active" id="clock-section">
+            <div class="display clock-display">
+                <span id="clock-hours">00</span>:<span id="clock-minutes">00</span>:<span id="clock-seconds">00</span>
+            </div>
+        </div>
+
+        <div class="stopwatch-section" id="stopwatch-section">
+            <div class="display stopwatch-display">
+                <span id="sw-hours">00</span>:<span id="sw-minutes">00</span>:<span id="sw-seconds">00</span>.<span id="sw-milliseconds">000</span>
+            </div>
+            <div class="controls">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn" disabled>Stop</button>
+                <button id="reset-btn" disabled>Reset</button>
+            </div>
+        </div>
+
+        <button id="theme-toggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+    </div>
+
+    <script src="s.js"></script>
+</body>
+</html>
